@@ -1,0 +1,26 @@
+DROP DATABASE IF EXISTS workouts_db;
+
+CREATE DATABASE workouts_db;
+
+USE workouts_db;
+
+CREATE TABLE signup (
+id INT AUTO_INCREMENT PRIMARY KEY,
+email VARCHAR(100) NOT NULL,
+pass_word VARCHAR(256) NOT NULL
+);
+
+CREATE TABLE users (
+id INT AUTO_INCREMENT PRIMARY KEY,
+user_name VARCHAR(50),
+email VARCHAR(100) NOT NULL,
+pass_word VARCHAR(256) NOT NULL
+);
+
+
+CREATE TABLE workouts (
+  id INT AUTO_INCREMENT NOT NULL ,
+  workout_name VARCHAR(255) NOT NULL,
+  crushed TINYINT (1) NOT NULL, 
+  PRIMARY KEY (id)
+);
