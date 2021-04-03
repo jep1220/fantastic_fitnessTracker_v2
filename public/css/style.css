@@ -363,3 +363,10 @@ h3 {
     -webkit-text-fill-color: transparent;
     transition: all 265ms ease-in;
 }
+
+@media screen and (min-width: 1000px) {
+    .card {
+        margin-left: 45px;
+        margin-top: 20px;
+    }
+}
