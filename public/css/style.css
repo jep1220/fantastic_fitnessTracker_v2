@@ -224,8 +224,9 @@ body {
     padding: 0;
     width: 220px;
     position: fixed;
-    height: 1000px;
+    height: 100%;
     overflow: auto;
+    font-size: 15px;
 }
 
 .sidebar a {
