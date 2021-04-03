@@ -275,14 +275,11 @@ div.content {
 
 /*about us*/
 
-* {
-    box-sizing: border-box;
-}
-
 .card {
     float: left;
     padding: 10px;
-    margin: 10px;
+    margin-top: 150px;
+    margin-left: 170px;
     height: 500px;
     box-shadow: 6px 8px black;
     border-radius: 30px;
