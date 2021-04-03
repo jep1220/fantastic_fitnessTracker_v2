@@ -1,0 +1,109 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantastic Fitness Tracker</title>
+  <link rel="stylesheet" href="/css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+</head>
+<body>
+<div class="sidebar" style="background-color: rgba(214, 205, 205, 0.616);">
+    <center>
+    <h3>Tutorials:</h3>
+    </center>
+    <a href="https://www.youtube.com/watch?v=3sEeVJEXTfY" style="font-size: 20px;" target=_blank>- At Home Workouts</a>
+    <a href="https://www.youtube.com/watch?v=gRVjAtPip0Y" style="font-size: 20px;" target=_blank>- Bench Press</a>
+    <a href="https://www.youtube.com/watch?v=Dy28eq2PjcM" style="font-size: 20px;" target=_blank>- Squats</a>
+    <a href="https://www.youtube.com/watch?v=-4qRntuXBSc" style="font-size: 20px" target=_blank>- Deadlifts</a>
+    <a href="https://www.youtube.com/watch?v=F3QY5vMz_6I" style="font-size: 20px;" target=_blank>- Military Press</a>
+    <a href="https://www.youtube.com/watch?v=glPpETvL-xo" style="font-size: 20px;" target=_blank>- Barbell Row</a>
+    <center>
+    <br>
+    <center>
+    <h3>Fitness Articles:</h3>
+    </center>
+    <a href="https://www.onnit.com/academy/category/fitness/" style="font-size: 20px;" target=_blank>- Fitness</a>
+    <a href="https://www.onnit.com/academy/category/nutrition/" style="font-size: 20px;" target=_blank>- Nutrition</a>
+    <a href="https://www.shoptotalnutrition.com/?gclid=CjwKCAjwgZuDBhBTEiwAXNofRFFYamBFE6ZtGsBSzDBagp2qe6392gfl3dZLxeJ9geqREuLur3LYkRoCVhMQAvD_BwE" style="font-size: 20px;" target=_blank>- Supplements</a>
+    <br>
+    <center>
+    <h3>Equipment:</h3>
+    </center>
+    <a href="https://www.amazon.com/TheFitLife-Exercise-Resistance-Bands-Handles/dp/B07KFSCD47/ref=sr_1_3?dchild=1&keywords=fitness+gear&qid=1617422995&sr=8-3" style="font-size: 20px;" target=_blank>- Resistance Bands</a>
+    <a href="https://www.walmart.com/ip/Everyday-Essentials-Multi-Function-Adjustable-Power-Rack-Exercise-Squat-Stand-with-J-Hooks-and-Other-Accessories-500-Pound-Capacity/432809517?wmlspartner=wlpa&selectedSellerId=0&&adid=22222222227318485221&wl0=&wl1=g&wl2=c&wl3=396459508230&wl4=pla-839565278391&wl5=9031608&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=432809517&veh=sem&gclid=CjwKCAjwgZuDBhBTEiwAXNofRK_DGXNS-Mrubt__oOcwBEbBLlErW5y_1NtKIwR3TuDOqlHrHKFczRoCkqUQAvD_BwE&gclsrc=aw.ds" style="font-size: 20px;" target=_blank>- Squat Rack</a>
+    <a href="https://www.amazon.com/PAPABABE-Dumbbells-Weights-Weight-Dumbbell/dp/B07VK1PFMF/ref=sr_1_17_sspa?dchild=1&keywords=weights&qid=1617423131&sr=8-17-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyRFdIMVJOSjBKU1I4JmVuY3J5cHRlZElkPUEwNDEwOTYzUUNPTE5GTDVVME0mZW5jcnlwdGVkQWRJZD1BMDczNzk0NDFNM0xHNzk4NTlUREYmd2lkZ2V0TmFtZT1zcF9tdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl&th=1" style="font-size: 20px;" target=_blank>- Weights</a>
+    <center>
+    <h3>Developers:</h3>
+    <a class="nav-link" href="aboutUs"><i class="fas fa-user-friends" style="color:white; font-size:20px;"></i>   Meet The Team</a>
+    </center>
+</div>
+
+<div class="container main">
+{{!-- Heading area --}}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+        <p class="lead text-center" style="color:white; font-size: 30px">Keep Track of the workouts you've totally Crushed!</p>
+        </div>
+    </div>
+
+{{!-- Add workout form --}}
+    <div class="container add-workout">
+        <h2 class="text-center">Add description of your workout</h2>
+        <form class="create-form">
+            <div class="form-group">
+                <label for="workout">Workout name:</label>
+                <textarea id="workout" class="form-control" name="workout_name" rows="2" cols="15"></textarea>
+            </div>
+            <div class="form-row text-center">
+                <div class="col-12">
+
+                    <button class="btn btn-light add" type="submit">Add workout</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    {{!-- workout list area --}}
+    <div id="workout-list">
+        <div class="container workouts">
+            <div class="row pb-4">
+                <div class="col-md-6 col-sm-12">
+                    <div class="col-12 workout-col m-1">
+
+                        <h2 class="text-center workout-heading">Workouts to Crush</h2>
+
+                        <ul class="workouts">
+                            {{#each workouts}}
+                            {{#unless crushed}}
+                            {{> workouts/workout-block }}
+                            {{/unless}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="col-12 workout-col m-1">
+
+                        <h2 class="text-center workout-heading">Workouts Crushed</h2>
+
+                        <ul class="workouts">
+                            {{#each workouts}}
+                            {{#if crushed}}
+                            {{> workouts/workout-block }}
+                            {{/if}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>

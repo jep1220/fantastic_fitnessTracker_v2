@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
+body {
+    background-image: url(./img/fitness-programming_home-workout-stock_column.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div.jumbotron {
+    margin-top: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    font: bold;
+}
+
+div.main {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+/* Add form styling */
+
+label[for="workout"] {
+    visibility: hidden;
+}
+
+div.add-workout {
+    width: 60%;
+    background-color: rgba(150, 148, 148, 0.548);
+    opacity: 1;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+div.add-workout h2 {
+    font-size: 2rem;
+    font-family: 'Cabin', sans-serif;
+    padding-top: 20px;
+}
+
+
+/* workout list styling */
+
+div.workouts {
+    margin: 10px;
+}
+
+div.workouts .workout-heading {
+    font-size: 2rem;
+    padding: 20px;
+    font-family: 'Cabin', sans-serif;
+}
+
+div.workout-col {
+    background-color: rgba(163, 162, 162, 0.568);
+    min-height: 300px;
+}
+
+li.workout-li {
+    background-color: rgb(223, 221, 221);
+    list-style-type: none;
+    border-bottom: 1px solid gray;
+}
+
+ul.workouts {
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+#submit {
+    background-color: white;
+    width: 150px;
+}
+
+.btn {
+    text-decoration: none;
+    border: none;
+    font-size: 25px;
+    background-color: white;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+}
+
+.submit:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.btn:hover,
+.btn:active {
+    letter-spacing: 5px;
+}
+
+.btn:after,
+.btn:before {
+    backface-visibility: hidden;
+    border: 1px solid rgba(#fff, 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.btn:hover:after,
+.btn:hover:before {
+    backface-visibility: hidden;
+    border-color: #fff;
+    transition: width 350ms ease-in-out;
+}
+
+.btn:hover:before {
+    bottom: auto;
+    top: 0;
+}
+
+#link {
+    letter-spacing: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#link:hover,
+#link:active {
+    letter-spacing: 3px;
+}
+
+#link:after,
+#link:before {
+    backface-visibility: hidden;
+    border: 1px solid rgba(#fff, 0);
+    bottom: 0px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    width: 0;
+}
+
+#link:hover:after,
+#link:hover:before {
+    backface-visibility: hidden;
+    border-color: #fff;
+    transition: width 400ms ease-in-out;
+}
+
+#link:hover:before {
+    bottom: auto;
+    top: 0;
+}
+
+.placeholder {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    transition: all 2s;
+    font-size: 1.55rem;
+    color: lighten;
+}
+
+input {
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    box-shadow: 3.5px 5.5px black;
+}
+
+.form-input {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 500px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.login {
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    box-shadow: 6px 8px black;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    position: fixed;
+    height: 1000px;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+
+/*about us*/
+
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    height: 500px;
+    box-shadow: 6px 8px black;
+    border-radius: 30px;
+}
+
+.person {
+    width: 235px;
+    height: 250px;
+    border-radius: 50px;
+    opacity: 7;
+}
+
+h3 {
+    padding-top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black
+}
+
+.card p {
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.cardContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0.25em;
+    position: relative;
+    font-size: 35px;
+}
+
+.social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 0.2em;
+    left: .3em;
+    transition: all 265ms ease-out;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, rgb(247, 167, 48), rgb(236, 100, 9));
+    transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+    transform: scale(2.0);
+    -ms-transform: scale(2.0);
+    -webkit-transform: scale(2.0);
+    color: orange;
+    background: -webkit-linear-gradient(45deg, rgb(247, 167, 48), rgb(236, 100, 9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+}

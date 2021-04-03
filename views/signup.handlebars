@@ -1,18 +1,16 @@
-<main>
+<main class="login" style="background-color: rgba(214, 205, 205, 0.616);">
 <div class="container mt-5">
-    <a href="/" class="btn btn-primary mb-5">Go Back</a>
     <h1>Register Account</h1>
     <form action="/signup" method="POST">
         <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
             <input type="password" name="password" class="form-control" id="exampleInputPassword1">
         </div>
-        <button type="submit" class="btn btn-primary">Register</button>
+        <button class="btn" id="submit"><a class="nav-link" href="/">Register</a></button>
     </form>
 </div>
 </main>

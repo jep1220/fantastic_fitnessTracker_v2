@@ -24,3 +24,4 @@ CREATE TABLE workouts (
   crushed TINYINT (1) NOT NULL, 
   PRIMARY KEY (id)
 );
+
