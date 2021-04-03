@@ -23,7 +23,7 @@ app.use(express.json());
 // Set Handlebars.
 const exphbs = require("express-handlebars");
 
-app.engine("handlebars", exphbs({ defaultLayout: "/" }));
+app.engine("handlebars", exphbs({ defaultLayout: "/login" }));
 app.set("view engine", "handlebars");
 app.engine('handlebars', exphbs({
     extname: 'handlebars',
@@ -39,6 +39,8 @@ app.use(express.json());
 const routes = require("./controllers/workouts_controller.js");
 
 app.use(routes);
+
+app.get('/aboutUs', (req, res) => { res.render("aboutUs") });
 
 const initializePassport = require('./passport-config')
 initializePassport(
@@ -65,7 +67,7 @@ app.get('/', checkAuthenticated, (req, res) => {
 })
 
 app.get('/login', checkNotAuthenticated, (req, res) => {
-    res.render('signup')
+    res.render('login')
 })
 
 app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
