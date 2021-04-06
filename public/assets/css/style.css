@@ -59,6 +59,14 @@ li.workout-li {
 	border-bottom: 1px solid gray;
 }
 
+/*style for chart column ---------------------------------------------*/
+.chart-container {
+	background-color: rgb(250, 247, 248);
+	list-style-type: none;
+	border-bottom: 1px solid gray;
+	text-align: center;
+}
+
 ul.workouts {
 	margin: 0 0 20px 0;
 	padding: 0 0 20px 0;

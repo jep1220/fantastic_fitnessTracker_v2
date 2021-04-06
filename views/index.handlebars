@@ -17,13 +17,27 @@
             </div>
             <div class="form-row text-center">
                 <div class="col-12">
-
                     <button class="btn btn-light add" type="submit">Add workout</button>
                 </div>
             </div>
         </form>
-    </div>
+        {{!--this form is for chart--}}
+         <form class="create-form">
+            <div class="form-group">
+                <label for="workout">Workout duration:</label>
+                <textarea id="duration" class="form-control" name="workout_duration" rows="2" cols="15"></textarea>
+            </div>
+            <div class="form-row text-center">
+                <div class="col-12">
 
+                {{!--this button is for chart--}}
+                <button class="btn btn-light add" type="submit">Add duration</button>
+                   
+                </div>
+            </div>
+        </form>
+    </div>
+              
     {{!-- workout list area --}}
     <div id="workout-list">
         <div class="container workouts">
@@ -60,6 +74,58 @@
             </div>
         </div>
     </div>
+
+
+
+    {{!--chart---------------------------------------------------------}}
+
+    <div id="workout-list">
+        <div class="container workouts">
+            <div class="row pb-4">
+                <div class="col-md-12">
+                    <div class="col-12 workout-col m-1 ">
+
+                        <h2 class="text-center workout-heading">Workouts Progress</h2>
+                         {{!-- Added canvas to run the chart --}}
+                        <div class="chart-container" style="color:aqua height:40vh;  width:60vw">
+                            <canvas id="myChart"></canvas>
+                        </div>
+
+                        <script>
+                            var oldData = [12, 18, 3, 5, 2, 3];
+                            var ctx = document.getElementById('myChart').getContext('2d');
+                            var myChart = new Chart(ctx, {
+                                type: 'bar',
+                                data: {
+                                    labels: ['Cardio', 'Weights', 'Chest & Back', 'Bench press'],
+                                    datasets: [{
+                                            label: 'Workouts',
+                                            data: oldData,
+                                            backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                                            borderColor: 'rgba(255, 99, 132, 1)',
+                                            borderWidth: 1,
+                                        }]
+                                    },
+                                options: {
+                                scales: {
+                                        y: {
+                                            beginAtZero: true
+                                        }
+                                    },
+                                }
+                            
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+    
 
 
 
