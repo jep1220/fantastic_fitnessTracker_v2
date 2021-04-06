@@ -21,7 +21,7 @@
                 </div>
             </div>
         </form>
-        {{!--this form is for chart--}}
+        {{!--this form is for chart-------------------------------------------------}}
          <form class="create-form">
             <div class="form-group">
                 <label for="workout">Workout duration:</label>
@@ -35,7 +35,7 @@
                    
                 </div>
             </div>
-        </form>
+        </form> {{!----------------------------------------------------------}}
     </div>
               
     {{!-- workout list area --}}
@@ -87,22 +87,22 @@
 
                         <h2 class="text-center workout-heading">Workouts Progress</h2>
                          {{!-- Added canvas to run the chart --}}
-                        <div class="chart-container" style="color:aqua height:40vh;  width:60vw">
-                            <canvas id="myChart"></canvas>
+                        <div class="chart-container" >
+                            <canvas id="myChart" style="color:aqua height:30vh;  width:50vw"></canvas>
                         </div>
 
                         <script>
                             var oldData = [12, 18, 3, 5, 2, 3];
                             var ctx = document.getElementById('myChart').getContext('2d');
                             var myChart = new Chart(ctx, {
-                                type: 'bar',
+                                type: 'line?',
                                 data: {
                                     labels: ['Cardio', 'Weights', 'Chest & Back', 'Bench press'],
                                     datasets: [{
                                             label: 'Workouts',
                                             data: oldData,
-                                            backgroundColor: 'rgba(255, 206, 86, 0.2)',
-                                            borderColor: 'rgba(255, 99, 132, 1)',
+                                            backgroundColor: 'rgba(150, 105, 120, 1)',
+                                            borderColor: 'rgba(200, 108, 150, 1)',
                                             borderWidth: 1,
                                         }]
                                     },
