@@ -23,7 +23,7 @@ app.use(express.json());
 // Set Handlebars.
 const exphbs = require("express-handlebars");
 
-app.engine("handlebars", exphbs({ defaultLayout: "/login" }));
+app.engine("handlebars", exphbs({ defaultLayout: "login" }));
 app.set("view engine", "handlebars");
 app.engine('handlebars', exphbs({
     extname: 'handlebars',
