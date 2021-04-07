@@ -82,7 +82,7 @@
     <div id="workout-list">
         <div class="container workouts">
             <div class="row pb-4">
-                <div class="col-md-12">
+                <div class="col-md-9 offset-2">
                     <div class="col-12 workout-col m-1 ">
 
                         <h2 class="text-center workout-heading">Workouts Progress</h2>
@@ -95,7 +95,7 @@
                             var oldData = [12, 18, 3, 5, 2, 3];
                             var ctx = document.getElementById('myChart').getContext('2d');
                             var myChart = new Chart(ctx, {
-                                type: 'line?',
+                                type: 'bar',
                                 data: {
                                     labels: ['Cardio', 'Weights', 'Chest & Back', 'Bench press'],
                                     datasets: [{
