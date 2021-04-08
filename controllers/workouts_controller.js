@@ -8,7 +8,7 @@ const workout = require("../models/workouts.js");
 // Get workouts
 router.get("/", async function(req, res) {
     const hbsObject = { workouts: await workout.selectAll() };
-    res.render("index", hbsObject);
+    res.render("page", hbsObject);
 });
 
 router.get("/api/workouts", async function(req, res) {
