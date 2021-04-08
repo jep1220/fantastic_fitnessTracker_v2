@@ -2,6 +2,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
 }
 
+const path = require('path');
 const express = require("express");
 require('dotenv').config()
 const flash = require('express-flash')
@@ -9,7 +10,8 @@ const bcrypt = require("bcrypt");
 const passport = require('passport')
 const methodOverride = require('method-override')
 const session = require('express-session')
-
+const connection = require('./config/connection');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const PORT = process.env.PORT || 8080;
 const app = express();
@@ -120,6 +122,4 @@ function checkNotAuthenticated(req, res, next) {
 app.listen(PORT, function() {
     // Log (server-side) when our server has started
     console.log("Server listening on port " + PORT);
-}); 
-
-
+});
