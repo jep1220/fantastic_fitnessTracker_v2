@@ -29,9 +29,30 @@
     "passport-local": "^1.0.0",
     "sequelize": "^6.3.5"
   },
-  "devDependencies": {
-    "eslint": "^7.12.1",
-    "eslint-config-prettier": "^6.15.0",
-    "prettier": "^2.1.2"
+  "development": {
+    "username": "mynvkys7gfi8cf20",
+    "password": "po1up2vuyg2t93qi",
+    "database": "^t811ut45bup5p563",
+    "host": "lfmerukkeiac5y5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
+ "test": {
+  "username": "mynvkys7gfi8cf20",
+  "password": "po1up2vuyg2t93qi",
+  "database": "^t811ut45bup5p563",
+  "host": "lfmerukkeiac5y5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  "dialect": "mysql"
+ },
+ "production": {
+  "username": "mynvkys7gfi8cf20",
+  "password": "po1up2vuyg2t93qi",
+  "database": "^t811ut45bup5p563",
+  "host": "lfmerukkeiac5y5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  "dialect": "mysql"
+},  
+  "devDependencies":{
+  "eslint": "^7.12.1",
+  "eslint-config-prettier": "^6.15.0",
+  "prettier": "^2.1.2"
   }
 }
