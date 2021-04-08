@@ -120,4 +120,4 @@ function checkNotAuthenticated(req, res, next) {
 app.listen(PORT, function() {
     // Log (server-side) when our server has started
     console.log("Server listening on port " + PORT);
-});
+}); 
