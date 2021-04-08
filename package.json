@@ -48,7 +48,6 @@
     "database": "^t811ut45bup5p563",
     "host": "lfmerukkeiac5y5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
-  }
-  
+  }  
 } 
 
