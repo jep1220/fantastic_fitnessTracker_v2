@@ -9,3 +9,13 @@ VALUES("newuser", "new@user.com", "lemmejoin");
 INSERT INTO users (user_name, email, pass_word)
 VALUES("ernieperez", "ernie@perez.com", "perez"), ("crizzo", "clint@rizzo.com", "clint"), ("smahmody", "shakofa@mahmody.com", "shakofa") , ("danelaban", "dane@laban.com", "laban");
 
+
+
+
+
+-- INSERT INTO signup (user_name, email, pass_word)
+-- VALUES("newuser", "new@user.com", "lemmejoin");
+
+-- INSERT INTO users (user_name, email, pass_word)
+-- VALUES("ernieperez", "ernie@perez.com", "perez"), ("crizzo", "clint@rizzo.com", "clint"), ("smahmody", "shakofa@mahmody.com", "shakofa") , ("danelaban", "dane@laban.com", "laban");
+
