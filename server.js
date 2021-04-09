@@ -44,6 +44,7 @@ const routes = require("./controllers/workouts_controller.js");
 app.use(routes);
 
 app.get('/aboutUs', (req, res) => { res.render("aboutUs") });
+app.get('/chart', (req, res) => { res.render("chart") });
 
 const initializePassport = require('./passport-config')
 initializePassport(
