@@ -3,6 +3,10 @@ body {
     background-image: url(./img/fitness-programming_home-workout-stock_column.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    /*height: 100%;
+    width: 100%;
+    position: fixed;*/
+
 }
 
 div.jumbotron {
@@ -58,6 +62,14 @@ li.workout-li {
     background-color: rgb(223, 221, 221);
     list-style-type: none;
     border-bottom: 1px solid gray;
+}
+
+/*style for chart column ---------------------------------------------*/
+.chart-container {
+	background-color: rgb(250, 247, 248);
+	list-style-type: none;
+	border-bottom: 1px solid gray;
+	text-align: center;
 }
 
 ul.workouts {
