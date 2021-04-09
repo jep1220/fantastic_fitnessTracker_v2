@@ -5,7 +5,9 @@ $(function() {
         const id = $(this).data('id');
         const newCrushed = !$(this).data('crushed');
 
+
         let newCrushedState = {
+
             crushed: newCrushed
         };
 
@@ -28,17 +30,30 @@ $(function() {
         if (workoutInput) {
             const newWorkout = {
                 workout_name: workoutInput,
-                crushed: 0
+                crushed: 0,
+                
             };
+            //---------------------------------------------------------------
+            //make the chart dynamic. user can add data
+            // function addData(chart) {
+            //     chart.data.labels.push(document.getElementById("workout").val);
+            //     chart.data.datasets.forEach((dataset) => {
+            //         dataset.data.push(document.getElementById("duration").val*1);
+            //     });
+            //     chart.update();
+            // }
+            //-------------------------------------------------------------
+
 
             // Send the POST request to add the new workout to the db
             $.ajax('/api/workouts', {
                 type: 'POST',
                 data: newWorkout
-            }).then(function() {
-
+            }).then(function () {
+               // addData();   ->--------------------------------------------
                 // Reload the page to get the updated list
                 location.reload();
+                //chart.update(); //chart update   ->------------------------
             });
         }
     });
@@ -47,13 +62,29 @@ $(function() {
     $('.delete-workout').on('click', function(event) {
         var id = $(this).data('id');
 
+        //---------------------------------------------------------------
+        //make the chart dynamic. user can remove data
+        // function removeData(chart) {
+        //     chart.data.labels.pop();
+        //     chart.data.datasets.forEach((dataset) => {
+        //         dataset.data.pop();
+        //     });
+        //     chart.update();
+        // }
+        //---------------------------------------------------------------
+
+
         // Send the DELETE request to remove the workout from the db
         $.ajax('/api/workouts/' + id, {
             type: 'DELETE'
         }).then(function() {
 
+           // removeData();  ->-----------------------------
+
             // Reload the page to get the updated list
             location.reload();
+            //chart.update(); //chart update  ->-----------------------------
+            
         });
     });
 });
