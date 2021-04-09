@@ -18,10 +18,10 @@ Handlebars are used along side with CSS and JS to build a responsive, good looki
 ## Back-end
 NodeJs, Express, MySQL, and sequilization are used to build a dynamic application.
 ## Usage
-!![Untitled_ Apr 8, 2021 10_09 PM (1)](https://user-images.githubusercontent.com/38770396/114131734-fca45f80-98b7-11eb-8e89-98f72259e6d6.gif)
+![Fantastic Fitness Tracker (2) (1)](https://user-images.githubusercontent.com/38770396/114134347-70e10200-98bc-11eb-9e11-810552645ba0.gif)
 
 ## Contributors
-If you have any question please contact us: [Clint](https://github.com/clintrizzo), [Ernie](https://github.com/jep1220), [Shakofa](https://github.com/shakofa), [Dane](https://github.com/DaneLaban)
+If you have any question please contact us: [Clint](https://github.com/clintrizzo), [Ernie](https://github.com/jep1220), [Shakofa](https://github.com/shakofa)
 GitHubGitHub
 clintrizzo - Overview
 ClintRizzo has 23 repositories available. Follow their code on github.
@@ -32,6 +32,5 @@ GitHubGitHub
 shakofa - Overview
 shakofa has 15 repositories available. Follow their code on GitHub.
 GitHubGitHub
-DaneLaban - Overview
-I am new to coding. DaneLaban has 16 repositories available. Follow their code on GitHub.
+
 
