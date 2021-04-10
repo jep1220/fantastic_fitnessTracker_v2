@@ -18,6 +18,9 @@ Handlebars are used along side with CSS and JS to build a responsive, good looki
 ## Back-end
 NodeJs, Express, MySQL, and sequilization are used to build a dynamic application.
 ## Usage
+
+https://fantastic-fitnesstracker-v2.herokuapp.com/
+
 ![Fantastic Fitness Tracker (2) (1)](https://user-images.githubusercontent.com/38770396/114134347-70e10200-98bc-11eb-9e11-810552645ba0.gif)
 
 ## Contributors
