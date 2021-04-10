@@ -10,7 +10,7 @@ const bcrypt = require("bcrypt");
 const passport = require('passport')
 const methodOverride = require('method-override')
 const session = require('express-session')
-const connection = require('./config/connection');
+const connection = require('./config/connection'); 
 
 // const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
