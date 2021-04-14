@@ -2,7 +2,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
 }
 
-const path = require('path');
+// const path = require('path');
 const express = require("express");
 require('dotenv').config()
 const flash = require('express-flash')
@@ -10,8 +10,9 @@ const bcrypt = require("bcrypt");
 const passport = require('passport')
 const methodOverride = require('method-override')
 const session = require('express-session')
-const connection = require('./config/connection');
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const connection = require('./config/connection'); 
+
+// const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const PORT = process.env.PORT || 8080;
 const app = express();
@@ -44,6 +45,7 @@ const routes = require("./controllers/workouts_controller.js");
 app.use(routes);
 
 app.get('/aboutUs', (req, res) => { res.render("aboutUs") });
+app.get('/chart', (req, res) => { res.render("chart") });
 
 const initializePassport = require('./passport-config')
 initializePassport(
